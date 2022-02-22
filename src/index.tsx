@@ -1,15 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import React from "react";
+import ReactDOM from "react-dom";
+import { UseInstallPromptProvider } from "@useweb/use-install-prompt";
 
-import Router from './pages/router'
-import Theme from './theme/theme'
+import Router from "./pages/router";
+import Theme from "./theme/theme";
 
 function App() {
   return (
-    <Theme>
-      <Router />
-    </Theme>
-  )
+    <UseInstallPromptProvider>
+      <Theme>
+        <Router />
+      </Theme>
+    </UseInstallPromptProvider>
+  );
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+ReactDOM.render(<App />, document.getElementById("root"));
