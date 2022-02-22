@@ -5,7 +5,7 @@ import themeTokens from './src/theme/tokens/tokens.js'
 export default async function appConfig(): Promise<AppConfigTypes> {
   return {
     domain: {
-      main: 'https://starter-webapp.vercel.app/',
+      main: '',
     },
     manifestJson: {
       name: 'Demo Starter',
