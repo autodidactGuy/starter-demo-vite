@@ -1,3 +1,3 @@
 # Services
 
-Home to 3rd party API config files
+Home to 3rd party APIs
