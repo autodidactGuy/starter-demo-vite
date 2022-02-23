@@ -25,6 +25,7 @@ export default {
             -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
             box-sizing: border-box;
             margin: 0;
+            padding: 20px;
           }
 
           p,
