@@ -1,3 +1,3 @@
 # Demo starter
 
-Simple Vite app for devs to follow demos
+Simple Vite app for devs to start tutorials
