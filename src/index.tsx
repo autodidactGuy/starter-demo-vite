@@ -1,5 +1,5 @@
 import React from 'react'
-import ReactDOM from 'react-dom'
+import { createRoot } from 'react-dom/client'
 
 import Router from './pages/router'
 import Theme from './theme/theme'
@@ -12,4 +12,10 @@ function App() {
   )
 }
 
-ReactDOM.render(<App />, document.getElementById('root'))
+const container = document.getElementById('root') as any
+const root = createRoot(container)
+root.render(
+  <>
+    <App />
+  </>,
+)
