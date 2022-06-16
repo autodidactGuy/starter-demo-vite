@@ -7,13 +7,11 @@
   "scripts": {
     "dev": "node --experimental-json-modules --loader ts-node/esm ./scripts/dev/run.ts",
     "app:dev": "node --experimental-json-modules --loader ts-node/esm ./devtools/vite/scripts/startDevServer/run.ts",
-    "app:build": "node --experimental-json-modules --loader ts-node/esm ./devtools/vite/scripts/buildApp/run.ts",
-    "app:serve": "node --experimental-json-modules --loader ts-node/esm ./devtools/vite/scripts/runBuild/run.ts",
-    "helpers:generate-logo-assets": "node --experimental-json-modules --loader ts-node/esm ./devtools/helpers/assets/generateLogoAssets/run.ts",
-    "helpers:create-icon": "node --experimental-json-modules --loader ts-node/esm ./devtools/helpers/createIcon/run.ts",
-    "helpers:update-useweb-deps": "npm-check-updates -f /@useweb/*/ -u && npm i",
-    "test:eslint": "eslint ./ --fix",
-    "test:ts-types": "tsc --noemit",
+    "build": "node --experimental-json-modules --loader ts-node/esm ./devtools/vite/scripts/buildApp/run.ts",
+    "serve": "node --experimental-json-modules --loader ts-node/esm ./devtools/vite/scripts/runBuild/run.ts",
+    "helpers:update-useweb-deps": "npm-check-updates -f /@useweb/*/ -u && npm i && npm run tests:ts-types",
+    "tests:eslint": "eslint ./ --fix",
+    "tests:ts-types": "tsc --noemit",
     "prettify": "node --loader  ts-node/esm ./devtools/prettier/scripts/runPrettier/runPrettier.ts",
     "install-deps": "npm i && cd functions && npm i"
   },
