@@ -14,6 +14,7 @@ function App() {
 
 const container = document.getElementById('root') as any
 const root = createRoot(container)
+
 root.render(
   <>
     <App />
