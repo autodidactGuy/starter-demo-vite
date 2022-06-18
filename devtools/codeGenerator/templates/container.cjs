@@ -17,7 +17,7 @@ const files = [
   {
     path: ({ name }) => `${name}Ui/${name}.ui.tsx`,
     template: ({ name }) => `import React from 'react'
-    import Box from '@mui/material/Box'
+    import Box from '@useweb/ui/Box'
 
     export default function ${name}Ui() {        
       return (
