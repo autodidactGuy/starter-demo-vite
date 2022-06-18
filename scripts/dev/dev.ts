@@ -2,11 +2,11 @@ import shellDashboard from '../../devtools/utils/terminal/shellDashboard.js'
 import getAppConfig from '../../app.config.js'
 import type { CommandProps } from '../../devtools/utils/terminal/shellDashboard.js'
 
-type Props = {
+type DevProps = {
   onReady?: () => any
 }
 
-export default async function dev({ onReady }: Props = { onReady: undefined }) {
+export default async function dev({ onReady }: DevProps = { onReady: undefined }) {
   const appConfig = await getAppConfig()
 
   const commands: CommandProps[] = [
