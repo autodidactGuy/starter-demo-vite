@@ -4,6 +4,10 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
   "scripts": {
     "dev": "node --experimental-json-modules --loader ts-node/esm ./scripts/dev/run.ts",
     "app:dev": "node --experimental-json-modules --loader ts-node/esm ./devtools/vite/scripts/startDevServer/run.ts",
