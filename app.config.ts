@@ -16,28 +16,6 @@ export default async function appConfig(): Promise<AppConfigTypes> {
       display: 'standalone',
       theme_color: themeTokens.colors.primary.main,
       background_color: themeTokens.colors.black.main,
-      screenshots: [
-        {
-          src: 'images/manifest/screenshot-create.png',
-          sizes: '360x640',
-          type: 'image/png',
-        },
-        {
-          src: 'images/manifest/screenshot-home.png',
-          sizes: '360x640',
-          type: 'image/png',
-        },
-        {
-          src: 'images/manifest/screenshot-sync.png',
-          sizes: '360x640',
-          type: 'image/png',
-        },
-        {
-          src: 'images/manifest/screenshot-edit.png',
-          sizes: '360x640',
-          type: 'image/png',
-        },
-      ],
     },
     server: {
       local: {
